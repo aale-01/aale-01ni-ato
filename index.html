@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empieza lo bueno 🗿🔥</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eeeeee;
+  color: #171717;
+  font-family: Georgia, serif;
+}
+
+.cover {
+  min-height: 100vh;
+  background: #171717;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.cover h1 {
+  font-size: clamp(35px, 9vw, 65px);
+  letter-spacing: 3px;
+}
+
+.cover p {
+  color: #cccccc;
+  letter-spacing: 4px;
+}
+
+button {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#album {
+  display: none;
+  padding: 25px 16px;
+  max-width: 750px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #222;
+  padding-bottom: 12px;
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.8;
+  margin: 30px 0;
+}
+
+.paper {
+  background: white;
+  padding: 18px;
+  margin: 25px auto;
+  max-width: 360px;
+  box-shadow: 3px 5px 12px #0002;
+  transform: rotate(-1deg);
+}
+
+.photo {
+  height: 230px;
+  background: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 15px;
+  text-align: center;
+}
+
+.paper p {
+  text-align: center;
+}
+
+.note {
+  background: #fff;
+  padding: 25px;
+  margin: 30px 0;
+  line-height: 1.8;
+  border-left: 5px solid #222;
+}
+
+footer {
+  text-align: center;
+  padding: 35px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<section class="cover">
+  <p>✦ UN ÁLBUM DE RECUERDOS ✦</p>
+  <h1>EMPIEZA<br>LO BUENO</h1>
+  <h2>🗿🔥</h2>
+  <p>CAPÍTULO 01</p>
+  <button onclick="entrar()">ENTRAR →</button>
+</section>
+
+<main id="album">
+
+  <h2>BIENVENIDO AL ÁLBUM</h2>
+
+  <div class="intro">
+    <p>Hay días que merecen ser recordados...</p>
+    <p>Y este es uno de ellos. 🖤</p>
+  </div>
+
+  <h2>🎂 EL CUMPLEAÑOS</h2>
+
+  <div class="note">
+    <h3>Un día especial</h3>
+    <p>
+      Hoy celebramos un año más de historias,
+      momentos y aventuras.
+      Que vengan muchos más recuerdos.
+    </p>
+  </div>
+
+  <h2>📸 NUESTROS RECUERDOS</h2>
+
+  <div class="paper">
+    <div class="photo">TU FOTO AQUÍ 📷</div>
+    <p>Recuerdo número 01</p>
+  </div>
+
+  <div class="paper">
+    <div class="photo">OTRA FOTO AQUÍ 📷</div>
+    <p>Un momento inolvidable</p>
+  </div>
+
+  <div class="paper">
+    <div class="photo">OTRA FOTO AQUÍ 📷</div>
+    <p>De esos días que no se olvidan</p>
+  </div>
+
+  <h2>✉️ UNA CARTITA</h2>
+
+  <div class="note">
+    <p>
+      Que nunca falten las risas, las aventuras
+      y los buenos momentos.
+      Gracias por formar parte de tantos recuerdos.
+      ¡Feliz cumpleaños! 🖤
+    </p>
+  </div>
+
+  <h2>FIN... ¿O PRINCIPIO?</h2>
+  <p class="intro">Lo mejor todavía está por venir. 🗿🔥</p>
+
+  <footer>HECHO CON CARIÑO ♡</footer>
+
+</main>
+
+<script>
+function entrar() {
+  document.querySelector(".cover").style.display = "none";
+  document.getElementById("album").style.display = "block";
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
